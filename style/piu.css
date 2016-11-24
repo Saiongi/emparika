@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.line, .line a {
+    color: #fff;
+}
+.line.black {
+    background: #000;
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 63px;
+    padding-top: 25px;
+}
+.line.blue {
+    background: #348cb2;
+}
+.logo {
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    height: 45px;
+    width: 275px;
+    float: left;
+    position: relative;
+    top: -14px;
+}
+.top_contact {
+    float: right;
+}
+.top_contact span, .top_contact a:not(:last-child) {
+    margin-right: 20px;
+}
+.top_contact a {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+}
+.top_contact a:hover {
+    border: 0;
+}
+.phone {
+    position: relative;
+}
+.phone:after {
+    content:'';
+    background: url(../images/em.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:-21px;
+}

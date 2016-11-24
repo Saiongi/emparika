@@ -1,0 +1,67 @@
+html, body {
+padding: 0;
+margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.line.black{
+    height: 65px;
+    background-color: black;
+}
+
+.line.black span, .line.black a{
+      
+    float: right;
+    position: relative;
+    margin-top: 24px;
+    margin-right: 60px;        
+}
+ 
+
+.telephone:: before{
+    content: '';
+    background: url(../images/em.png) ;
+    width: 15px;
+    height: 15px; 
+    top: 12px;
+    position: absolute;
+    display: block;
+}
+
+.line a,.line span{
+    color: white;
+    padding-bottom: 3px;
+}
+.line a{
+    border-bottom: 1px solid white;
+}
+.line a:hover,.menu li:hover{
+     border-bottom:0;
+}
+
+.logo{
+        background: url(../images/logo.png) center center no-repeat;
+    background-size: cover;
+    width: 217px;
+    height: 35px;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+.line.blue {
+   background-color: #348cb2;
+   height: 45px;
+   
+}
+.menu li{
+    margin-right: 20px; 
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+.menu li{
+    display: inline-block;
+  
+}
