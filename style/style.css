@@ -19,22 +19,50 @@ a{
     margin-top: 24px;
     margin-right: 60px;        
 }
+.telephone{
+    //увеличить шрифт и опустить пониже
+}
  
 
-.telephone: before{
+.telephone:before {
+    content: '';
+    background: url(../images/ph.png);
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    right: 141px;
+    background-size: contain;
+    position: absolute;
+    display: block;
+}
+
+.mail:before {
     content: '';
     background: url(../images/em.png);
-    width: 15px;
-    height: 15px; 
-    top: 12px;
-    background-size: cover;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    right: 141px;
+    background-size: contain;
+    position: absolute;
+    display: block;
+}
+
+.adress:before {
+    content: '';
+    background: url(../images/lo.png);
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    right: 205px;
+    background-size: contain;
     position: absolute;
     display: block;
 }
 
 .line a,.line span{
     color: white;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 .line a{
     border-bottom: 1px solid white;
@@ -61,8 +89,6 @@ a{
     margin-right: 20px; 
     padding-bottom: 3px;
     margin-top: 10px;
-}
-.menu li{
     display: inline-block;
   
 }
