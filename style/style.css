@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&subset=cyrillic');
 html, body {
 padding: 0;
 margin: 0;
 }
 
-a{
+
+a, div, span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}   
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 37px;
+    margin-top: 11px;
+    line-height: 1;
+}
+a{   
     text-decoration: none;
+     
 }
 
 .line.black{
@@ -23,7 +38,6 @@ a{
     //увеличить шрифт и опустить пониже
 }
  
-
 .telephone:before {
     content: '';
     background: url(../images/ph.png);
@@ -99,3 +113,64 @@ a{
     padding: 0px;
     
 }
+
+.main{
+width: 100%; 
+position: absolute; 
+background: linear-gradient(to top, #ffffff, #bcbcba);
+height: 500px; 
+z-index: -1;      
+}
+
+.container{
+    width: 1070px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.column{
+    display: inline-block;
+    vertical-align: top;
+}
+.column.left{   
+   display: inline-block;
+    vertical-align: top;
+    width: 49%;
+/*    margin-left: 185px;
+    margin-top: 35px;*/
+}
+.cup{
+    background: url(../images/cup.png) center center no-repeat;
+    height: 460px;
+    background-size: contain;
+}
+.column.right{  
+    
+    display: inline-block;
+    vertical-align: top;
+  /*  width: 49%;*/
+    width: 519px;
+    padding-top: 84px;
+}
+.column.right p{
+    color:#666;
+} 
+button{
+    box-shadow: inset 0px 1px 0px 0px rgb(228, 110, 104);
+    padding: 5px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;/*18*/
+    color:white;
+    background: linear-gradient(to bottom, #ce0100 5%, #e61700 100%);
+    margin-top: 16px;
+    border-radius: 6px;
+    border: 1px solid #d83526;
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, #e61700 100%, #ce0100 5% );
+}
+.clearfix {
+    clear: both;
+}
+
