@@ -19,6 +19,7 @@ h1{
 }
 a{   
     text-decoration: none;
+    color: #348cb2;
      
 }
 
@@ -79,9 +80,7 @@ a{
 .line a{
     border-bottom: 1px solid white;
 }
-.line a:hover,.menu li:hover{
-     border-bottom:0;
-}
+
 
 .logo{
         background: url(../images/logo.png) center center no-repeat;
@@ -114,7 +113,6 @@ a{
 
 .main{
 width: 100%; 
-/*position: absolute;*/ 
 background: linear-gradient(to top, #ffffff, #bcbcba);
 height: 500px; 
 padding-top: 50px;   
@@ -154,15 +152,23 @@ padding-top: 50px;
     color:#666;
 } 
 button{
-    box-shadow: inset 0px 1px 0px 0px rgb(228, 110, 104);
-    padding: 5px 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;/*18*/
+    box-shadow: inset 0px 1px 0px 0px rgb(228, 110, 104);   
+    font-family: 'Open Sans', sans-serif;  
     color:white;
     background: linear-gradient(to bottom, #ce0100 5%, #e61700 100%);
-    margin-top: 16px;
     border-radius: 6px;
     border: 1px solid #d83526;
+}
+.button1{
+    padding: 5px 25px;
+    font-size: 16px;
+    margin-top: 16px;
+    
+}
+.button2{
+    padding: 5px 12px;
+    margin-top: 16px;
+    
 }
 button:hover{
     cursor: pointer;
@@ -184,5 +190,108 @@ button:hover{
     background-size: contain;
 }
 .item_text{
+       
+    display: table;
+    width: 100%;
+}
+.str2{
+    min-height: 39px;
+}
+.str3{
+    min-height: 58px;
+}
+.text_child{
     vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+  a{
+   
+    padding-bottom: 1px;
+    border-bottom: 1px solid #348cb2; 
+    
+}
+a:hover, .menu li:hover{
+     border-bottom:0;
+}
+
+.container.bottomborder{
+    overflow: hidden;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #93a6ba; 
+}
+.info{
+    margin-top: 50px;
+}
+.infoblock{
+    width: 299px;
+    height: 339px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+}
+.price{
+    margin-left: 33px;
+    color: black;
+}
+.name{
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 36px;
+}
+.birka{
+    position: relative;    
+    
+}
+.birka:before{
+    
+    margin-left: -34px;
+    margin-top: -15px;
+    content: '';
+    background: url(../images/birka.png) center no-repeat;
+    display: block;
+    width: 150px;
+    position: absolute;
+    height: 55px;
+    background-size: contain;   
+}
+
+.infoblock p{
+    
+   margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #676666;
+    
+}
+.infoblock:last-child{
+    margin: 0;
+}
+p .date{
+    color: #93a6ba;
+}
+.imgblog{
+    background: url(../images/blcl.jpg) center center no-repeat;
+    background-size: cover;
+    width: 314px;
+    height: 315px; 
+    display: inherit;
+    vertical-align: inherit;
+}
+footer{
+    margin-top: 30px;
+}
+.information{
+    position: relative;
+}
+.information:before{
+    background-color: #ffef98;
+    position: absolute;
+    display: block;
+    background-size: contain;
+    width: 610px;
+    height: 40px;
+    top: 0;
+    left:0;
+    
 }
