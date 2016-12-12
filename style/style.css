@@ -285,6 +285,10 @@ footer{
 }
 .information{
     position: relative;
+    display: inline-block;
+    vertical-align:top;
+    padding-right: 150px;
+    
 }
 .information:before{
     background-color: #ffef98;
@@ -304,16 +308,49 @@ footer{
     border: 20px solid transparent;	
     border-left: 20px solid #ffef98;
     content: '';
-    margin-left: 128px;    border: 25px solid transparent;
+    margin-left: 128px;
+    border: 25px solid transparent;
     border-left: 29px solid #ffef98;
     content: '';
-    margin-left: 101px;
-    margin-top: -12px;
+    margin-left: 530px;
+    margin-top: -29px;
     position: absolute;
 }
 .information, .information strong, .information a{
     font-size: 13px;
 }
+.soc{
+  font-size: 13px;
+  margin-top: 4px;
+}
+.soc, .soc2{
+    display: inline-block;
+    vertical-align:top;
+}
+.footer.top{
+    padding-bottom:  45px;
+}
+.border_bottom{
+
+  border-bottom: 1px dashed #93a6ba;  
+}
 .footer.bottom{
-  margin-top: 40px;  
+    margin-top: 15px;
+    
+}
+.footer.bottom div{
+    font-size: 13px;
+    color: #676666;
+    display: inline-block;
+}
+.fleft{
+    float:left;
+    overflow:hidden;
+}
+.fright{
+    float:right;
+    overflow:hidden;
+}
+footer{
+   padding-bottom: 30px; 
 }
