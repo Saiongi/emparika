@@ -277,6 +277,8 @@ p .date{
     height: 315px; 
     display: inherit;
     vertical-align: inherit;
+    position: relative;
+    top: -10px;
 }
 footer{
     margin-top: 30px;
@@ -289,9 +291,29 @@ footer{
     position: absolute;
     display: block;
     background-size: contain;
-    width: 610px;
-    height: 40px;
+    width: 670px;
+    height: 50px;
     top: 0;
-    left:0;
-    
+    left: 0;
+    content: '';
+    z-index: -1;
+    margin-left: -140px;
+    margin-top: -12px;       
+}
+.information:after{
+    border: 20px solid transparent;	
+    border-left: 20px solid #ffef98;
+    content: '';
+    margin-left: 128px;    border: 25px solid transparent;
+    border-left: 29px solid #ffef98;
+    content: '';
+    margin-left: 101px;
+    margin-top: -12px;
+    position: absolute;
+}
+.information, .information strong, .information a{
+    font-size: 13px;
+}
+.footer.bottom{
+  margin-top: 40px;  
 }
